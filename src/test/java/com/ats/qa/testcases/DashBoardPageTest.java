@@ -7,7 +7,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-
 import com.ats.qa.base.TestBase;
 import com.ats.qa.pages.DashBoardPage;
 import com.ats.qa.pages.LoginPage;
@@ -60,9 +59,7 @@ public class DashBoardPageTest extends TestBase {
 	public void verifyCreateNewProjectTest() throws InterruptedException {
 	
 		String actualCurrentUrl = dashBoardPage.createNewProject( );
- String expectedCurrentUrl = "https://spec.atsspecsolutions.com/productCategory";
- 
- 
+        String expectedCurrentUrl = "https://spec.atsspecsolutions.com/productCategory";
 		Assert.assertTrue(actualCurrentUrl.contains(expectedCurrentUrl));
 	}
 /* 
@@ -71,9 +68,7 @@ public class DashBoardPageTest extends TestBase {
 	public void verifyCreateNewProjectTest(String strProjectName,String strCountry,String strProvince,String strCity,Integer intArea) throws InterruptedException {
 	
 		String actualCurrentUrl = dashBoardPage.createNewProject(strProjectName,strCountry,strProvince,strCity,intArea );
- String expectedCurrentUrl = "https://spec.atsspecsolutions.com/productCategory";
- 
- 
+        String expectedCurrentUrl = "https://spec.atsspecsolutions.com/productCategory";
 		Assert.assertTrue(actualCurrentUrl.contains(expectedCurrentUrl));
 	}
 
