@@ -67,7 +67,7 @@ public class DashBoardPageTest extends TestBase {
 	}
 /* 
  * for DataDrivenApproch, we will use dataProvider which will read the data from excel sheet
-	@Test(priority=1,,dataProvider="NewProjectData")
+	@Test(priority=1,dataProvider="NewProjectData")
 	public void verifyCreateNewProjectTest(String strProjectName,String strCountry,String strProvince,String strCity,Integer intArea) throws InterruptedException {
 	
 		String actualCurrentUrl = dashBoardPage.createNewProject(strProjectName,strCountry,strProvince,strCity,intArea );
